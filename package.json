@@ -1,0 +1,23 @@
+{
+  "name": "vue-vite-mfa-example",
+  "version": "1.0.0",
+  "description": "Vue 2.7 + Vite 4.5.9 + Module Federation",
+  "scripts": {
+    "install:deps": "npm --prefix host-app install && npm --prefix ./remote-app-first install && npm --prefix ./remote-app-second install",
+    "dev:host": "npm --prefix host-app run dev",
+    "dev:remote-first": "npm --prefix ./remote-app-first run dev",
+    "dev:remote-second": "npm --prefix ./remote-app-second run dev",
+    "dev": "run-p dev:*",
+    "build:host": "npm --prefix host-app run build",
+    "build:remote-first": "npm --prefix ./remote-app-first run build",
+    "build:remote-second": "npm --prefix ./remote-app-second run build",
+    "build": "run-p build:*",
+    "preview:host": "npm --prefix host-app run build && npm --prefix host-app run preview",
+    "preview:remote-first": "npm --prefix ./remote-app-first run build && npm --prefix ./remote-app-first run preview",
+    "preview:remote-second": "npm --prefix ./remote-app-second run build && npm --prefix ./remote-app-second run preview",
+    "preview": "run-p preview:*"
+  },
+  "dependencies": {
+    "npm-run-all": "4.1.5"
+  }
+}
