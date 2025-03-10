@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <MainApp />
+    <Microservice2 />
   </div>
 </template>
 
 <script>
-import MainApp from './components/MainApp.vue';
+import Microservice2 from './components/Microservice2.vue';
 
 export default {
   name: 'App',
   components: {
-    MainApp,
+    Microservice2,
   },
 };
 </script>

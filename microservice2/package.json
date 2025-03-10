@@ -1,12 +1,12 @@
 {
-  "name": "host",
+  "name": "microservice2",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite dev --port 4173",
-    "vite:dev": "vite --port 4173",
+    "dev": "vite dev --port 4175",
+    "vite:dev": "vite --port 4175",
     "build": "vite build",
-    "preview": "vite preview --port 4173"
+    "preview": "vite preview --port 4175"
   },
   "dependencies": {
     "shared-state": "file:../shared-state",
